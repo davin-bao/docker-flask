@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+  flask:
+    image: davinbao/flask:latest
+    deploy:
+      replicas: 1
+      endpoint_mode: vip
+      resources:
+        limits:
+          memory: 512M
+    volumes:
+    - /home/www/expert_lib:/home/www:rw
+    ports:
+    - 5000:5000/tcp
+    extra_hosts:
+    - "redis_server:172.17.0.1"
+    - "mysql_server:172.17.0.1"
