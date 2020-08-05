@@ -1,6 +1,6 @@
 FROM python:3.7
 
-COPY sources.list /etc/apt/sources.list
+# COPY sources.list /etc/apt/sources.list
 
 RUN apt-get update
 
