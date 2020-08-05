@@ -14,7 +14,7 @@ RUN pip install numpy==1.17.4
 RUN pip install pandas==1.0.5
 RUN pip install openpyxl==3.0.4
 RUN pip install redis==3.5.3
-RUN pip install gunicorn=20.0.4
+RUN pip install gunicorn==20.0.4
 
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
