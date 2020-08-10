@@ -21,6 +21,7 @@ RUN pip install openpyxl==3.0.4
 RUN pip install redis==3.5.3
 RUN pip install gunicorn==20.0.4
 RUN pip install gevent==20.6.2
+RUN pip install requests==2.24.0
 
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
